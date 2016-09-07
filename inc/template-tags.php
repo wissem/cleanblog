@@ -292,7 +292,7 @@ function cleanblog_header() { ?>
 			<?php if ( function_exists( 'the_subtitle' ) ) {
 				the_subtitle( '<h2 class="subheading">', '</h2>' );
 			} ?>
-                        <span class="meta"><?php cleanblog_posted_on(); ?></span>
+                        <span class="meta hidden"><?php cleanblog_posted_on(); ?></span>
                     </div>
                 </div>
             </div>
@@ -369,7 +369,7 @@ function cleanblog_header() { ?>
 			<?php } else { ?>
                         <h1><?php esc_html_e( 'Clean Blog', 'cleanblog' ); ?></h1>
 			<?php } ?>
-                        <hr class="small">
+                        <!--<hr class="small">-->
 			<?php if (get_theme_mod('cleanblog_homeintro_subtitle') !='') { ?>
                         <span class="subheading"><?php echo get_theme_mod( 'cleanblog_homeintro_subtitle' ); ?></span>
 			<?php } else { ?>
